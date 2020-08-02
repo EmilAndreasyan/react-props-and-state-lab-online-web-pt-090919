@@ -37,14 +37,6 @@ onAdoptPet = petId => {
     });
     this.setState({ pets: pets });
   };
-  
-  
-onAdoptPet = petId => {
-  const pets = this.state.pets.map(p => {
-    return p.id === petId ? {...p, isAdopted: true} : p
-  })
-  this.setState({pets: pets})
-}
 
   render() {
     return (
